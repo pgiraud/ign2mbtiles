@@ -7,7 +7,10 @@ logging.basicConfig(level=logging.DEBUG)
 
 KEY = 'gnk8fnku3lwbxjz1fz34xx32'
 
-url = "http://gpp3-wxs.ign.fr/%s/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&STYLE=normal&FORMAT=image/jpeg&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}.jpg" % KEY
+# use png extension instead of jpeg
+# jpeg will actually be downloaded but extension is png which won't break
+# mbutil
+url = "http://gpp3-wxs.ign.fr/%s/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=GEOGRAPHICALGRIDSYSTEMS.MAPS&STYLE=normal&FORMAT=image/jpeg&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}.png" % KEY
 
 mb = MBTilesBuilder(cache=True, tiles_url=url, tiles_headers={'Referer': 'localhost'}, filepath="/home/pierre/ign.mbtiles")
 

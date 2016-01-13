@@ -19,3 +19,5 @@ develop-eggs
 lib64
 
 env
+venv
+*.mbtiles

@@ -8,7 +8,7 @@ from mbutil import mbtiles_to_disk
 
 logging.basicConfig(level=logging.DEBUG)
 
-KEY = 'gnk8fnku3lwbxjz1fz34xx32'
+KEY = 'jhyvi0fgmnuxvfv0zjzorvdn'
 
 # use png extension instead of jpeg
 # jpeg will actually be downloaded but extension is png which won't break

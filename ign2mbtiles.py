@@ -9,7 +9,7 @@ from shapely.geometry import shape
 
 logging.basicConfig(level=logging.DEBUG)
 
-KEY = 'jhyvi0fgmnuxvfv0zjzorvdn'
+KEY = "3q2joes3czlq8mvuhm4zx2hs"
 
 # use png extension instead of jpeg
 # jpeg will actually be downloaded but extension is png which won't break
